@@ -18,3 +18,9 @@ void maxHeapify(int* vector, int n, int i){ // TODO adaptar considerando primeir
     }
     maxHeapify(vector, n, m);
 }
+
+void buildMaxHeap (int* vector, int n){
+    for (int i = n/2; i>=1; i--){
+        maxHeapify(vector, n, i);
+    }
+}
