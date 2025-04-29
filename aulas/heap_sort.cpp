@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-void maxHeapify(int* vector, int n, int i){ // TODO adaptar considerando primeiro indice 0
+void maxHeapify(int* vector, int n, int i){ 
     int m = i; // maximo
-    int esq = 2*i;
-    int dir = 2*i + 1;
+    int esq = 2*i + 1;
+    int dir = (i+1)*2;
     if (esq <= n && vector[esq] > vector[i]){
         m = esq;
     }
