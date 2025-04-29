@@ -94,7 +94,7 @@ void BinaryTree::pre_order(){
         s.pop();
         cout << p->value << " ";
         if (p->dir != nullptr) s.push(p->dir);
-        if(p->esq != nullptr) s.push(p->esq);
+        if (p->esq != nullptr) s.push(p->esq);
     }
 }
 
