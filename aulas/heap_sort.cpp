@@ -24,3 +24,17 @@ void buildMaxHeap (int* vector, int n){
         maxHeapify(vector, n, i);
     }
 }
+
+void heapSort(int* vector, int n){
+    buildMaxHeap(vector, n);
+    for(int k=n; k>=2; k--){
+        swap(vector[1], vector[k]);
+        maxHeapify(vector, k-1, 1);
+    }
+}
+
+void swap(int &x, int &y){
+    int z = x;
+    x=y;
+    y=z;
+}
