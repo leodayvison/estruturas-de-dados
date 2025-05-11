@@ -28,19 +28,25 @@ int buscaBinariaPares(vector<int> v, int x){
         if(v[q] > x) r = q - 2;
     }
     return -1;
-
 }
+
+
 
 int main(){
     vector<int> v;
     v.push_back(1);
+    v.push_back(50);
     v.push_back(2);
+    v.push_back(40);
     v.push_back(3);
+    v.push_back(30);
     v.push_back(4);
+    v.push_back(20);
     v.push_back(5);
+    v.push_back(10);
 
     
     // 3, 8, 6
 
-    cout <<buscaBinariaImpares(v, 2);
+    cout <<buscaBinariaPares(v, 2) << " " << buscaBinariaImpares(v, 2);
 }
